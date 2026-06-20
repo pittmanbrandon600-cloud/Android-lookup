@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Data Lookup"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_permissions"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Check Permissions"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_call_logs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Load Call Logs"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_messages"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Load Text Messages"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Load Contacts"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_media"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Load Media (Photos & Videos)"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:text="No data loaded yet" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
